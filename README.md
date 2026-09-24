@@ -27,7 +27,7 @@ A hands-on Linux/DevOps lab covering **user isolation, tmpfs storage, system str
 └── README.md
 ```
 
-## 👤 1. Service User
+## 1. Service User
 
 Creates an isolated system user:
 
@@ -44,7 +44,7 @@ getent passwd bgdsvc_mobin
 
 ---
 
-## 💾 2. tmpfs Scratch Storage
+## 2. tmpfs Scratch Storage
 
 Creates a **256 MB RAM-backed filesystem**:
 
@@ -60,7 +60,7 @@ df -h /mnt/bgdsvc_mobin_tmp
 
 ---
 
-## 🔥 3. Stress Testing
+## 3. Stress Testing
 
 Script:
 
@@ -108,7 +108,7 @@ sudo dmesg | grep -i oom
 
 ---
 
-## 🔐 4. SSH Hardening
+## 4. SSH Hardening
 
 SSH configuration:
 
@@ -134,7 +134,7 @@ ssh -i ~/.ssh/bgdsvc_mobin_key -p 2222 bgdsvc_mobin@localhost
 
 ---
 
-## ⏰ 5. Cron Monitoring
+## 5. Cron Monitoring
 
 Every 5 minutes:
 
@@ -156,7 +156,7 @@ crontab -l -u bgdsvc_mobin
 
 ---
 
-## 📦 6. Logrotate
+## 6. Logrotate
 
 Configuration:
 
@@ -180,7 +180,7 @@ Configured for rotation, compression, size limits, and retention.
 
 ---
 
-## 🧹 7. Cleanup
+## 7. Cleanup
 
 Script:
 
@@ -215,7 +215,7 @@ mount | grep bgdsvc_mobin
 
 ---
 
-## 🧪 Verification
+##  Verification
 
 Screenshots document:
 
@@ -235,7 +235,7 @@ screenshots/
 
 ---
 
-## 🚀 Key Learnings
+## Key Learnings
 
 * Linux service-user isolation
 * `tmpfs` and filesystem management
@@ -247,7 +247,7 @@ screenshots/
 * Safe system teardown
 * Basic Linux resource management
 
-## 🔄 Lifecycle
+## Lifecycle
 
 ```text
 Create User
